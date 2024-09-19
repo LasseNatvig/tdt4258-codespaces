@@ -1,0 +1,15 @@
+{
+  "name": "C Development",
+  "image": "mcr.microsoft.com/devcontainers/cpp:0-debian-11",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack"
+      ]
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y build-essential gdb clang lldb"
+}
