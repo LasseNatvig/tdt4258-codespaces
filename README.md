@@ -1,6 +1,6 @@
 # TDT4258 C Programming
 
-This repository contains a complete C programming environment for solving the lab assignments in TDT4258. It lets you write, compile, and debug C programs in a VSCode-like environment straight from your web browser.
+This repository contains a C programming environment for use in the course TDT4258. It lets you write, compile, and debug C programs in a VSCode-like environment straight from your web browser.
 
 ## Getting Started
 
@@ -39,7 +39,7 @@ clang example.c -o example
 
 ## Debugging
 
-To debug a program, you can use the VSCode debugger. To start debugging the current C file, open the debugger pane in VSCode (the "play" button in the left sidebar) and click the "Start Debugging" button.
+To debug a program, you can use the VSCode debugger. To start debugging the current C file, open the debugger pane in VSCode (the "play" button in the left sidebar) and click the "Run and Debug" button.
 
 In debug mode, you can set breakpoints in your code by clicking on the line number in the left margin. You can then inspect your variables in the sidebar.
 
