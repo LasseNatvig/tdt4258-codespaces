@@ -1,8 +1,15 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
+#include <signal.h>
 
 #define SCREEN_WIDTH 320
 #define SCREEN_HEIGHT 240
+
+// Signal handler for making Ctrl+C work
+volatile int running = 1;
+void signal_handler(int signum) {
+    running = 0;
+}
 
 void clearScreen(SDL_Surface *surface) {
   SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 255, 255, 255));
@@ -17,6 +24,9 @@ void drawRect(SDL_Surface *surface, int x, int y, int width, int height,
 int main(int argc, char *argv[]) {
   SDL_Window *window = NULL;
   SDL_Surface *screenSurface = NULL;
+
+  // Set up signal handler for Ctrl+C
+  signal(SIGINT, signal_handler);
 
   if (SDL_Init(SDL_INIT_VIDEO) < 0) {
     printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
@@ -43,7 +53,7 @@ int main(int argc, char *argv[]) {
   SDL_UpdateWindowSurface(window);
 
   SDL_Event e;
-  while (1) {
+  while (running) {
     while (SDL_PollEvent(&e) != 0) {
       if (e.type == SDL_QUIT) {
         break;
