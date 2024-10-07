@@ -14,7 +14,7 @@
   "portsAttributes": {
     "6080": {
       "label": "desktop",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "notify"
     }
   },
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libsdl2-dev"

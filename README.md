@@ -1,8 +1,12 @@
 # TDT4258 C Programming
 
-This repository contains a C programming environment for use in the course TDT4258. It lets you write, compile, and debug C programs in a VSCode-like environment straight from your web browser.
+This repository contains a C programming environment for use in the course TDT4258. It lets you write, compile, and debug C programs in a VSCode-like environment straight from your web browser, or in VSCode on your local machine.
 
 ## Getting Started
+
+To use this environment, you can either use GitHub Codespaces in a web browser, or use a VSCode on your local computer with a Dev Container.
+
+### GitHub Codespaces in a web browser
 
 1. Create a GitHub account if you don't already have one.
 
@@ -25,6 +29,14 @@ This repository contains a C programming environment for use in the course TDT42
 
 1. Once the Codespace is ready, you'll see a VSCode interface in your browser. You may get a popup saying "There are task errors. See the output for details.". You can safely ignore this warning!
 
+### VSCode Dev Container on your local machine
+
+1. Install Docker Desktop and VSCode.
+
+1. Install the "Dev Containers" extension in VSCode.
+
+1. Clone this repository and open it in VSCode. You should be prompted with a dialog asking if you want to develop in a container. Click "Reopen in Container".
+
 ## Compiling and running programs
 
 Open the terminal within VSCode (Ctrl + D or Cmd + D) and try compiling and running the example program:
@@ -37,6 +49,8 @@ clang example.c -o example
 ./example
 ```
 
+### Graphics
+
 To compile programs using SDL2 graphics, some additional compiler flags are needed:
 
 ```bash
@@ -46,6 +60,8 @@ clang sdl2-demo.c -o sdl2-demo $(sdl2-config --cflags --libs)
 # Run the program
 ./sdl2-demo
 ```
+
+To see the GUI of your running program, go to the "Ports" tab next to the terminal in VSCode, and find the URL listed under "Forwarded Address". Open this URL in a web browser and click "Connect".
 
 ## Debugging
 
@@ -58,4 +74,4 @@ In debug mode, you can set breakpoints in your code by clicking on the line numb
 You can use Git when you work in a Codespace just as you would in a local environment. You can either run Git commands in the terminal or use the VSCode Git integration found in the sidebar.
 
 > [!WARNING]
-> Codespaces will be deleted after 30 days of inactivity. We recommend commiting and pushing your changes regularly to avoid losing your work.
+> GitHub Codespaces will be deleted after 30 days of inactivity. We recommend commiting and pushing your changes regularly to avoid losing your work.
