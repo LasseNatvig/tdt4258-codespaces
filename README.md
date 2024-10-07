@@ -37,6 +37,16 @@ clang example.c -o example
 ./example
 ```
 
+To compile programs using SDL2 graphics, some additional compiler flags are needed:
+
+```bash
+# Compile the program with SDL2
+clang sdl2-demo.c -o sdl2-demo $(sdl2-config --cflags --libs)
+
+# Run the program
+./sdl2-demo
+```
+
 ## Debugging
 
 To debug a program, you can use the VSCode debugger. To start debugging the current C file, open the debugger pane in VSCode (the "play" button in the left sidebar) and click the "Run and Debug" button.
