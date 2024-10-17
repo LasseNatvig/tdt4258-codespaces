@@ -46,8 +46,8 @@ int main(int argc, char *argv[]) {
   // Fill the screen with white
   clearScreen(screenSurface);
 
-  // Draw a black square in the center of the screen
-  drawRect(screenSurface, 200, 200, 100, 100,
+  // Draw a red square in the center of the screen
+  drawRect(screenSurface, 50, 50, 100, 100,
              SDL_MapRGB(screenSurface->format, 255, 0, 0));
 
   SDL_UpdateWindowSurface(window);
@@ -55,6 +55,10 @@ int main(int argc, char *argv[]) {
   // Draw a black square in the center of the screen
   drawRect(screenSurface, 100, 100, 100, 100,
            SDL_MapRGB(screenSurface->format, 0, 0, 0));
+
+  // Draw a green square in the center of the screen
+  drawRect(screenSurface, 150, 150, 100, 100,
+             SDL_MapRGB(screenSurface->format, 0, 255, 0));
 
 
   SDL_UpdateWindowSurface(window);
