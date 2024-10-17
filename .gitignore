@@ -6,6 +6,9 @@
 *.ko
 *.obj
 *.elf
+sdl2-demo
+example
+
 
 # Linker output
 *.ilk
