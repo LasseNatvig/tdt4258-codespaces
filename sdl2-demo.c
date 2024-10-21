@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  window = SDL_CreateWindow("Black Square Demo", SDL_WINDOWPOS_UNDEFINED,
+  window = SDL_CreateWindow("TDT4258 SDL Aanimation Demo", SDL_WINDOWPOS_UNDEFINED,
                             SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH,
                             SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
   if (window == NULL) {
@@ -46,15 +46,12 @@ int main(int argc, char *argv[]) {
   // Fill the screen with white
   clearScreen(screenSurface);
 
-  for (int i = 0; i < 100; i++) {
-    drawRect(screenSurface, i, i, 100, 100,
-             SDL_MapRGB(screenSurface->format, 255, 0, 0));
-    // Draw a black square in the center of the screen
-    drawRect(screenSurface, i + 100, i+100, 100, 100,
-            SDL_MapRGB(screenSurface->format, 0, 0, 0));
-    // Draw a green square in the center of the screen
-    drawRect(screenSurface, i + 150, i+ 150, 100, 100,
-              SDL_MapRGB(screenSurface->format, 0, 255, 0));
+  for (int i = 0; i < 200; i++) {
+    drawRect(screenSurface, i,       i,       100, 100, SDL_MapRGB(screenSurface->format, 255, 0, 0)); 
+    drawRect(screenSurface, i + 100, i + 100, 100, 100, SDL_MapRGB(screenSurface->format, 0, 0, 0));
+    drawRect(screenSurface, i + 150, i + 150, 100, 100, SDL_MapRGB(screenSurface->format, 0, 255, 0));
+    drawRect(screenSurface, 250 - i, 150 - i, 50, 50, SDL_MapRGB(screenSurface->format, 0, 0, 255));
+    
     SDL_UpdateWindowSurface(window);
     SDL_Delay(100);
   }
