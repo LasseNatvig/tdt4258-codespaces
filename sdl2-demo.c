@@ -18,7 +18,7 @@ void clearScreen(SDL_Surface *surface) {
 void drawRect(SDL_Surface *surface, int x, int y, int width, int height,
               Uint32 color) {
   SDL_Rect rect = {x, y, width, height};
-  SDL_FillRect(surface, &rect, color);
+  SDL_FillRect(surface, &rect, color);  
 }
 
 
