@@ -1,5 +1,16 @@
 # TDT4258 C Programming
 
+
+
+
+Renskriv denne for meg, er bra nå
+
+Begynn på Lab-oppgaver, frivillige, teste de, hvor lett rundt BigPixel
+
+Husk at jeg har gammel hybrid-løsning med CPUlator
+
+
+
 This repository contains a C programming environment for use in the course TDT4258. It lets you write, compile, and debug C programs in a VSCode-like environment straight from your web browser, or in VSCode on your local machine.
 
 ## Getting Started
