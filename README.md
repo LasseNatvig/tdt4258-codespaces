@@ -1,33 +1,25 @@
 # TDT4258 C Programming
 
+* code/arbeid was based on Mikkel Svartveits codespace solution for TDT4258 - 2024 season
 
+## April 2026 - update
 
+*   Begynn på Lab-oppgaver, frivillige, teste de, hvor lett rundt BigPixel
+  * Mest mulig på RPi4
+  * Husk at jeg har gammel hybrid-løsning med CPUlator i koden min
+* Bruk Makefile  
 
-Renskriv denne for meg, er bra nå
-
-Begynn på Lab-oppgaver, frivillige, teste de, hvor lett rundt BigPixel
-
-Husk at jeg har gammel hybrid-løsning med CPUlator
-
-
-
-This repository contains a C programming environment for use in the course TDT4258. It lets you write, compile, and debug C programs in a VSCode-like environment straight from your web browser, or in VSCode on your local machine.
-
-## Getting Started
+********** Fra Mikkel nedenfor, klarte ikke installere på T14s --- han skriver man kan kjøre i web-browser men ... diverse nyttig dokumentasjon **************
 
 To use this environment, you can either use GitHub Codespaces in a web browser, or use a VSCode on your local computer with a Dev Container.
 
 ### VSCode Dev Container on your local machine
 
-1. Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+1. **Not possible on T14s** Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
-2. Install the "Dev Containers" extension in VSCode.
+...
 
-3. Clone this repository and open it in VSCode. You should be prompted with a dialog asking if you want to develop in a container. Click "Reopen in Container". If this dialog does not show up, you can press `Cmd/Ctrl + Shift + P` and type "Reopen in Container".
-
-4. VSCode will reload and open in the Dev Container. You may get a popup saying "There are task errors. See the output for details.". You can safely ignore this warning!
-
-### GitHub Codespaces in a web browser
+### GitHub Codespaces in a web browser (NOT TESTED)
 
 1. Create a GitHub account if you don't already have one.
 
