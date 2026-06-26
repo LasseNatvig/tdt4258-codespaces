@@ -2,6 +2,16 @@
 
 * code/arbeid was based on Mikkel Svartveits codespace solution for TDT4258 - 2024 season
 
+## June 2026 update
+
+### La diverse under docker/arbeid bare ligge, har SDL3 uten docker, 
+### sløyf å prøve MSR/RAPL under windows11/docker, er antakelig beskyttet, kan ødelegge
+### heller prøv på PC0 etter ferdig faget**
+
+
+
+
+
 ## April 2026 - update
 
 *   Begynn på Lab-oppgaver, frivillige, teste de, hvor lett rundt BigPixel
